@@ -86,3 +86,33 @@ h1
 {
 	color: #b294bb;
 }
+pre.sh_sourceCode {
+  background-color: white;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size:14px;
+}
+
+pre.sh_sourceCode .sh_keyword { color: blue; font-weight: bold; }           /* language keywords */
+pre.sh_sourceCode .sh_type { color: darkgreen; }                            /* basic types */
+pre.sh_sourceCode .sh_usertype { color: teal; }                             /* user defined types */
+pre.sh_sourceCode .sh_string { color: red; font-family: monospace; }        /* strings and chars */
+pre.sh_sourceCode .sh_regexp { color: orange; font-family: monospace; }     /* regular expressions */
+pre.sh_sourceCode .sh_specialchar { color: pink; font-family: monospace; }  /* e.g., \n, \t, \\ */
+pre.sh_sourceCode .sh_comment { color: brown; font-style: italic; }         /* comments */
+pre.sh_sourceCode .sh_number { color: purple; }                             /* literal numbers */
+pre.sh_sourceCode .sh_preproc { color: darkblue; font-weight: bold; }       /* e.g., #include, import */
+pre.sh_sourceCode .sh_symbol { color: darkred; }                            /* e.g., <, >, + */
+pre.sh_sourceCode .sh_function { color: black; font-weight: bold; }         /* function calls and declarations */
+pre.sh_sourceCode .sh_cbracket { color: red; }                              /* block brackets (e.g., {, }) */
+pre.sh_sourceCode .sh_todo { font-weight: bold; background-color: cyan; }   /* TODO and FIXME */
+pre {
+	background: #f5f5f5;
+	border: 1px solid #dadada;
+	padding: 11px;
+	font-size: 14px;
+	line-height: 1.3em;
+	overflow: auto;
+	font-family:Courier New;
+}
