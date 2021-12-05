@@ -4,10 +4,22 @@
 		<meta charset = "utf-8">
 		<title> None's Blog </title>
 		<link rel = "stylesheet" href = "css/style.css"> </link>
-<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
 	</head>
 	<body>
-		<h1 style = "font-family:NLT;"> None </h1>
+		<div class = "top">
+			<center>
+				<ul>
+					<li><img src="images/LOGO.png" width="32" height="32" /></li>
+					<li style="font-family:NLT;font-size:30px">None -- 颓废!</li>
+					<li><a href="https://none-xxx.github.io/Hacker-page/index.html">开发者页面</a></li>
+					<li><a href="https://none-xxx.github.io/Music-player/index.html">音乐播放器</a></li>
+				</ul>
+			</center>
+		</div>
+		<p>占位符QWQ</p>
+		<br />
+		<br />
 		<abbr id = "Nonee" title = "一个颓废的OIER" style = "font-family:NLT;font-size:30px;"> None </abbr>
 		<br />
 		<abbr id = "Cheeeeese" title = "另一个颓废的OIER" style = "font-family:NLT;font-size:30px;"> Cheeeeese </abbr>
@@ -48,10 +60,10 @@
 			</tr>
 		</table>
 		<p1> 总分：<del>400</del> 152<br /><strong>I <del>AK</del> AFO CSP-J 2021! </strong></p1>
-		<br />
-		<p2> 以下为测试内容 </p2>
 		<hr />
-		<pre class="sh_cpp sh_sourceCode"><span class="sh_preproc">#include</span><span class="sh_string">&lt;bits/stdc++.h&gt;</span>
+		<div class = "test">
+			<pre class="sh_cpp sh_sourceCode">
+<span class="sh_preproc">#include</span><span class="sh_string">&lt;bits/stdc++.h&gt;</span>
 <span class="sh_keyword">using</span> <span class="sh_keyword">namespace</span> std<span class="sh_symbol">;</span>
 <span class="sh_type">int</span> N<span class="sh_symbol">;</span>
 <span class="sh_type">int</span> n<span class="sh_symbol">,</span> m<span class="sh_symbol">,</span> k<span class="sh_symbol">;</span>
@@ -176,6 +188,28 @@
 		<span class="sh_cbracket">}</span>
 	<span class="sh_cbracket">}</span>	
 	<span class="sh_keyword">return</span> <span class="sh_number">0</span><span class="sh_symbol">;</span>
-<span class="sh_cbracket">}</span></pre>
+<span class="sh_cbracket">}</span>
+			</pre>
+		</div>
+		<div class="goTop" id="js-go_top">
+			<img src="./images/icon_top.png" alt="回到顶部图片">
+		</div>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="./js/GoToTop.js"></script>
+		<script>
+			$('#js-go_top').gotoTop({
+				offset : 500, //距离顶部的位置
+				speed : 300, //移动到顶部的速度
+				/*     iconSpeed : 300, //icon动画样式的速度*/
+				animationShow : {
+					'transform' : 'translate(0,0)',
+					'transition': 'transform .5s ease-in-out'
+				}, //icon动画样式显示时
+				animationHide : {
+					'transform' : 'translate(80px,0)',
+					'transition': 'transform .5s ease-in-out'
+				} //icon动画样式隐藏时
+			});
+		</script>
 	</body>
 </html>
